@@ -49,7 +49,7 @@ Cookies.prototype.get = function (cName) {
 };
 
 Cookies.prototype.exists = function (name) {
-    return typeof this.getCookie(name) !== "undefined";
+    return typeof this.get(name) !== "undefined";
 };
 
 Cookies.prototype.delete = function (name) {
